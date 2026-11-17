@@ -1,0 +1,57 @@
+import type { Config } from 'tailwindcss';
+
+export default {
+  darkMode: 'class',
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        card: 'var(--card)',
+        'card-foreground': 'var(--card-foreground)',
+        popover: 'var(--popover)',
+        'popover-foreground': 'var(--popover-foreground)',
+        primary: 'var(--primary)',
+        'primary-foreground': 'var(--primary-foreground)',
+        secondary: 'var(--secondary)',
+        'secondary-foreground': 'var(--secondary-foreground)',
+        accent: 'var(--accent)',
+        'accent-foreground': 'var(--accent-foreground)',
+        muted: 'var(--muted)',
+        'muted-foreground': 'var(--muted-foreground)',
+        destructive: 'var(--destructive)',
+        'destructive-foreground': 'var(--destructive-foreground)',
+        border: 'var(--border)',
+        input: 'var(--input)',
+        ring: 'var(--ring)',
+        apex: {
+          deepGreen: '#0B4A3F',
+          teal: '#0F766E',
+          gold: '#D4A017',
+          goldLight: '#F5D77A',
+          goldSoft: '#FBF3D9',
+          ink: '#10231F',
+          muted: '#5B6B67',
+          page: '#F2F6F4',
+          line: '#E1E8E5',
+          tableHeader: '#F6FAF8',
+          // Palette
+          emerald: '#10B981',
+          amber: '#F59E0B',
+          indigo: '#6366F1',
+          violet: '#8B5CF6',
+          sky: '#0EA5E9',
+          rose: '#F43F5E',
+          green: '#16A34A',
+          slate: '#64748B',
+        },
+      },
+      fontFamily: {
+        sans: ['Geist', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['Geist Mono', 'ui-monospace', 'monospace'],
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
